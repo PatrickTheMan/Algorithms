@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Configurations>Debug;Release;NoAPILogging</Configurations>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.1" />
+		<PackageReference Include="Uniconta.NetStandardAPI" Version="1.1.91.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="B2S-API-Comm">
+	    <HintPath>..\B2S-API-Comm\B2S-API-Comm\bin\Release\net7.0\B2S-API-Comm.dll</HintPath>
+	  </Reference>
+	  <Reference Include="LoggingTool">
+	    <HintPath>..\..\Log\Log\obj\Debug\net7.0\LoggingTool.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
